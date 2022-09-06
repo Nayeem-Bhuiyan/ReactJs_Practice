@@ -6,9 +6,10 @@ const [color,setColor]=useState('blue');
 
     return (
         <div>
-            <input value={0} onChange={(e)=>setColor(e.target.value)}/><br/>
+            <form>
+                <input type="text" placeholder="Enter Color" value={0} onChange={(e)=>setColor(e.target.value)}/><br/>
+            </form>
             <p>your selected color :{color}</p>
-
         </div>
     );
 };
